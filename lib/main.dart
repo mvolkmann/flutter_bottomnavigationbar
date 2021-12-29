@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'about_page.dart';
-import 'bottom_nav.dart';
+import 'bottom_navigation.dart';
 import 'home_page.dart';
 import 'settings_page.dart';
 
@@ -24,8 +24,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:
-          const BottomNav(title: 'BottomNavigationBar Demo', options: options),
+      home: BottomNavigation(
+        title: 'BottomNavigationBar Demo',
+        options: options,
+      ),
     );
   }
 }

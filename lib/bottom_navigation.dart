@@ -12,22 +12,22 @@ class NavOption {
   });
 }
 
-class BottomNav extends StatefulWidget {
+class BottomNavigation extends StatefulWidget {
   final String title; // for AppBar
   final List<NavOption> options;
 
-  const BottomNav({
+  const BottomNavigation({
     Key? key,
     required this.title,
     required this.options,
   }) : super(key: key);
 
   @override
-  State<BottomNav> createState() => BottomNavState();
+  State<BottomNavigation> createState() => BottomNavigationState();
 }
 
 //TODO: Why can't this class be made private with a leading underscore?
-class BottomNavState extends State<BottomNav> {
+class BottomNavigationState extends State<BottomNavigation> {
   int _pageIndex = 0;
 
   @override
