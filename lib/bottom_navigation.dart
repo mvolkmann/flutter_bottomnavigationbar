@@ -13,14 +13,9 @@ class NavOption {
 }
 
 class BottomNavigation extends StatefulWidget {
-  final String title; // for AppBar
   final List<NavOption> options;
 
-  const BottomNavigation({
-    Key? key,
-    required this.title,
-    required this.options,
-  }) : super(key: key);
+  const BottomNavigation({Key? key, required this.options}) : super(key: key);
 
   @override
   State<BottomNavigation> createState() => BottomNavigationState();
@@ -43,7 +38,7 @@ class BottomNavigationState extends State<BottomNavigation> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.options[_pageIndex].label),
       ),
       body: Center(child: widget.options[_pageIndex].widget),
       bottomNavigationBar: BottomNavigationBar(

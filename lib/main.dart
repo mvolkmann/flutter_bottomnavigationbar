@@ -24,10 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BottomNavigation(
-        title: 'BottomNavigationBar Demo',
-        options: options,
-      ),
+      home: BottomNavigation(options: options),
     );
   }
 }
