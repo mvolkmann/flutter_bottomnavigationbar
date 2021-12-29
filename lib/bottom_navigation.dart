@@ -15,7 +15,10 @@ class NavOption {
 class BottomNavigation extends StatefulWidget {
   final List<NavOption> options;
 
-  const BottomNavigation({Key? key, required this.options}) : super(key: key);
+  const BottomNavigation({
+    Key? key,
+    required this.options,
+  }) : super(key: key);
 
   @override
   State<BottomNavigation> createState() => BottomNavigationState();
