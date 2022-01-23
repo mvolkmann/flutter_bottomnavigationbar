@@ -21,11 +21,10 @@ class BottomNavigation extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<BottomNavigation> createState() => BottomNavigationState();
+  State<BottomNavigation> createState() => _BottomNavigationState();
 }
 
-//TODO: Why can't this class be made private with a leading underscore?
-class BottomNavigationState extends State<BottomNavigation> {
+class _BottomNavigationState extends State<BottomNavigation> {
   int _pageIndex = 0;
 
   @override
