@@ -45,13 +45,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
       body: Center(child: widget.options[_pageIndex].widget),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIndex,
+        items: items,
         onTap: (int index) {
-          setState(() {
-            _pageIndex = index;
-          });
+          setState(() => _pageIndex = index);
         },
         selectedItemColor: Colors.green,
-        items: items,
       ),
     );
   }
